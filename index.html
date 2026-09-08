@@ -10,14 +10,20 @@
     <meta name="keywords" content="La Union, Philippines, Heritage, San Juan, Poro Point, Tangadan Falls, Ma-Cho Temple" />
     <meta name="author" content="La Union Heritage" />
     
-    <!-- ===== OPEN GRAPH META TAGS ===== -->
+    <!-- ===== OPEN GRAPH META TAGS (for social media) ===== -->
     <meta property="og:title" content="La Union Heritage - Home" />
     <meta property="og:description" content="Discover the rich heritage and culture of La Union, Philippines." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://venzcalimlim31-rgb.github.io/LU-PANG-HERITAGE/" />
     
+    <!-- ===== CACHE CONTROL ===== -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000" />
+    
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="style.css" />
+    
+    <!-- ===== PRELOAD BACKGROUND IMAGE ===== -->
+    <link rel="preload" as="image" href="images/pangasinan-bg.png" />
 </head>
 <body>
     <div class="container">
@@ -38,25 +44,25 @@
         <section class="destinations" aria-label="Featured Destinations">
             <a href="destinations.html#sanjuan" class="item-link">
                 <div class="item">
-                    <img src="images/sanjuan.jpg" alt="San Juan Surfing Destination" class="dest-icon" />
+                    <img src="images/sanjuan.png" alt="San Juan Surfing Destination" class="dest-icon" loading="lazy" width="35" height="35" />
                     <span class="number">01</span> San Juan
                 </div>
             </a>
             <a href="destinations.html#poropoint" class="item-link">
                 <div class="item">
-                    <img src="images/poropoint.jpg" alt="Poro Point Lighthouse and Beach" class="dest-icon" />
+                    <img src="images/poropoint.png" alt="Poro Point Lighthouse and Beach" class="dest-icon" loading="lazy" width="35" height="35" />
                     <span class="number">02</span> Poro Point
                 </div>
             </a>
             <a href="destinations.html#tangadan" class="item-link">
                 <div class="item">
-                    <img src="images/tangadanfalls.jpg" alt="Tangadan Falls Natural Waterfall" class="dest-icon" />
+                    <img src="images/tangadanfalls.png" alt="Tangadan Falls Natural Waterfall" class="dest-icon" loading="lazy" width="35" height="35" />
                     <span class="number">03</span> Tangadan Falls
                 </div>
             </a>
             <a href="destinations.html#machotemple" class="item-link">
                 <div class="item">
-                    <img src="images/matchotemple.jpg" alt="Ma-Cho Temple Cultural Landmark" class="dest-icon" />
+                    <img src="images/matchotemple.png" alt="Ma-Cho Temple Cultural Landmark" class="dest-icon" loading="lazy" width="35" height="35" />
                     <span class="number">04</span> Ma-Cho Temple
                 </div>
             </a>
