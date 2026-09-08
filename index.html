@@ -3,83 +3,61 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- ===== SEO META TAGS ===== -->
     <title>La Union Heritage - Home</title>
-    <meta name="description" content="Discover the rich heritage and culture of La Union, Philippines. Explore San Juan, Poro Point, Tangadan Falls, and Ma-Cho Temple." />
-    <meta name="keywords" content="La Union, Philippines, Heritage, San Juan, Poro Point, Tangadan Falls, Ma-Cho Temple" />
-    <meta name="author" content="La Union Heritage" />
-    
-    <!-- ===== OPEN GRAPH META TAGS (for social media) ===== -->
-    <meta property="og:title" content="La Union Heritage - Home" />
-    <meta property="og:description" content="Discover the rich heritage and culture of La Union, Philippines." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://venzcalimlim31-rgb.github.io/LU-PANG-HERITAGE/" />
-    
-    <!-- ===== CACHE CONTROL ===== -->
-    <meta http-equiv="Cache-Control" content="public, max-age=31536000" />
-    
-    <!-- ===== PRECONNECT FOR FASTER LOADING ===== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="style.css" />
-    
-    <!-- ===== PRELOAD BACKGROUND IMAGE (UPDATED TO WEBP) ===== -->
-    <link rel="preload" as="image" href="images/pangasinan-bg.webp" />
+    <link rel="preload" as="image" href="images/pangasinan-bg.jpg" />
 </head>
 <body>
     <div class="container">
         <!-- ===== HEADER ===== -->
-        <header class="header">
+        <div class="header">
             <h1 class="main-title">LA UNION</h1>
             <p class="sub-title">PHILIPPINES</p>
-        </header>
+        </div>
 
         <!-- ===== NAVIGATION ===== -->
-        <nav class="nav" aria-label="Main Navigation">
-            <a href="index.html" class="active" aria-current="page">Home</a>
+        <nav class="nav">
+            <a href="index.html" class="active">Home</a>
             <a href="destinations.html">Destinations</a>
             <a href="about.html">About La Union</a>
         </nav>
 
         <!-- ===== DESTINATIONS WITH LINKS ===== -->
-        <section class="destinations" aria-label="Featured Destinations">
+        <div class="destinations">
             <a href="destinations.html#sanjuan" class="item-link">
                 <div class="item">
-                    <img src="images/sanjuan.png" alt="San Juan Surfing Destination" class="dest-icon" loading="lazy" width="35" height="35" />
+                    <img src="images/sanjuan.jpg" alt="San Juan" class="dest-icon" />
                     <span class="number">01</span> San Juan
                 </div>
             </a>
             <a href="destinations.html#poropoint" class="item-link">
                 <div class="item">
-                    <img src="images/poropoint.png" alt="Poro Point Lighthouse and Beach" class="dest-icon" loading="lazy" width="35" height="35" />
+                    <img src="images/poropoint.jpg" alt="Poro Point" class="dest-icon" />
                     <span class="number">02</span> Poro Point
                 </div>
             </a>
             <a href="destinations.html#tangadan" class="item-link">
                 <div class="item">
-                    <img src="images/tangadanfalls.png" alt="Tangadan Falls Natural Waterfall" class="dest-icon" loading="lazy" width="35" height="35" />
+                    <img src="images/tangadanfalls.jpg" alt="Tangadan Falls" class="dest-icon" />
                     <span class="number">03</span> Tangadan Falls
                 </div>
             </a>
             <a href="destinations.html#machotemple" class="item-link">
                 <div class="item">
-                    <img src="images/matchotemple.png" alt="Ma-Cho Temple Cultural Landmark" class="dest-icon" loading="lazy" width="35" height="35" />
+                    <img src="images/matchotemple.jpg" alt="Ma-Cho Temple" class="dest-icon" />
                     <span class="number">04</span> Ma-Cho Temple
                 </div>
             </a>
-        </section>
+        </div>
 
         <!-- ===== HERO ===== -->
-        <section class="hero" aria-label="Hero Section">
+        <div class="hero">
             <h2>LA UNION</h2>
             <p>
                 A province of surfers, storytellers and soul-searchers. 
                 Discover the perfect blend of heritage, adventure and undiscovered paradise.
             </p>
-        </section>
+        </div>
     </div>
 </body>
 </html>
