@@ -13,7 +13,7 @@ body {
     justify-content: center;
     padding: 20px;
     
-    /* ===== BACKGROUND IMAGE - UPDATED TO .jpg ===== */
+    /* ===== BACKGROUND IMAGE ===== */
     background-image: url('images/pangasinan-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -134,6 +134,8 @@ body::before {
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #c9a84c;
+    aspect-ratio: 1/1;
+    flex-shrink: 0;
 }
 
 .destinations .number {
@@ -267,6 +269,7 @@ body::before {
     border-radius: 12px;
     margin-bottom: 12px;
     border: 2px solid rgba(255, 255, 255, 0.2);
+    aspect-ratio: 16/9;
 }
 
 .destination-detail h2 {
@@ -411,4 +414,17 @@ body::before {
     .about-content .brand {
         font-size: 1.2rem;
     }
+}
+
+/* ===== ADDITIONAL OPTIMIZATION ===== */
+/* Para maiwasan ang layout shift habang nagla-load ang images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Para sa background image - iwas FOUC (Flash of Unstyled Content) */
+body {
+    background-color: #1a3a3a; /* fallback color habang nagla-load ang background image */
 }
