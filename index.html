@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La Union Heritage - Home</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preload" as="image" href="images/pangasinan-bg.jpg" />
+    
+    <!-- I-optimize ang pag-load ng background image -->
+    <link rel="preload" as="image" href="images/pangasinan-bg.jpg" fetchpriority="high" />
 </head>
 <body>
     <div class="container">
@@ -26,25 +28,57 @@
         <div class="destinations">
             <a href="destinations.html#sanjuan" class="item-link">
                 <div class="item">
-                    <img src="images/sanjuan.jpg" alt="San Juan" class="dest-icon" />
+                    <img 
+                        src="images/sanjuan.jpg" 
+                        alt="San Juan La Union" 
+                        class="dest-icon" 
+                        width="35" 
+                        height="35" 
+                        loading="lazy" 
+                        decoding="async"
+                    />
                     <span class="number">01</span> San Juan
                 </div>
             </a>
             <a href="destinations.html#poropoint" class="item-link">
                 <div class="item">
-                    <img src="images/poropoint.jpg" alt="Poro Point" class="dest-icon" />
+                    <img 
+                        src="images/poropoint.jpg" 
+                        alt="Poro Point La Union" 
+                        class="dest-icon" 
+                        width="35" 
+                        height="35" 
+                        loading="lazy" 
+                        decoding="async"
+                    />
                     <span class="number">02</span> Poro Point
                 </div>
             </a>
             <a href="destinations.html#tangadan" class="item-link">
                 <div class="item">
-                    <img src="images/tangadanfalls.jpg" alt="Tangadan Falls" class="dest-icon" />
+                    <img 
+                        src="images/tangadanfalls.jpg" 
+                        alt="Tangadan Falls La Union" 
+                        class="dest-icon" 
+                        width="35" 
+                        height="35" 
+                        loading="lazy" 
+                        decoding="async"
+                    />
                     <span class="number">03</span> Tangadan Falls
                 </div>
             </a>
             <a href="destinations.html#machotemple" class="item-link">
                 <div class="item">
-                    <img src="images/matchotemple.jpg" alt="Ma-Cho Temple" class="dest-icon" />
+                    <img 
+                        src="images/matchotemple.jpg" 
+                        alt="Ma-Cho Temple La Union" 
+                        class="dest-icon" 
+                        width="35" 
+                        height="35" 
+                        loading="lazy" 
+                        decoding="async"
+                    />
                     <span class="number">04</span> Ma-Cho Temple
                 </div>
             </a>
